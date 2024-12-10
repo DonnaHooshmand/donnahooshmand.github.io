@@ -1,311 +1,196 @@
 <!DOCTYPE html>
-<html lang="">
-
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ===========================
-    THEME INFO
-    =========================== -->
-    <meta name="description" content="CVstrap is another Free minimal CV HTML theme by EvenFly built with Bootstrap 3.3.0. and released under CC-3.0 license.">
-    <meta name="keywords" content="curriculum vitae, cv, one page, onepage, bootstrap, responsive, resume, timeline, free cv">
-    <meta name="author" content="Mamun Srizon">
-
-    <!-- ===========================
-    SITE TITLE
-    =========================== -->
-    <title>Donna Hooshmand</title>
-
-    <!-- ===========================
-    FAVICONS
-    =========================== -->
-    <link rel="icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
-
-    <!-- ===========================
-    STYLESHEETS
-    =========================== -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- ===========================
-    FONTS & ICONS
-    =========================== -->
-    <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-    <!--[if IE]>
-        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>Computer Science Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #4b0082;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6a0dad;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .white_box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <!-- ===========================
-        HEADER
-        ============================ -->
-        <div id="header" class="row">
-            <div class="col-sm-2">
-                <img class="propic" src="img/profpic1.jpg" alt="">
+    <header>
+        <h1>Donna Hooshmand</h1>
+        <p>PhD Candidate at Northwestern University</p>
+    </header>
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#research">Research Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching Experience</a>
+        <a href="#award">Awards and Certificates</a>
+        <a href="#community">Community</a>
+    </nav>
+    <div class="white_box">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="white_box">
+                <h3>Doctor of Philosophy</h3>
+                <ul>Advisor: Kristian Hammond</ul>
+                <ul>Research topics:  Artificial Intelligence, Automation of Data Science, Curriculum Learning, Deep Learning, Machine Learning, Natural Language Processing.</ul>
+                <ul>GPA: 3.98/4.00 </ul>
+                <ul>Expected Graduation Date: 08/2026</ul>
+
+                <h3>Master's of Science</h3>
+                <ul>GPA: 3.98/4.00 </ul>
+
+                <h3>Bachelor's of Science </h3>
+                <ul> Double major in Computer Information Systems (emphasis on Security) and Mathematics </ul>
+                <ul>Graduated Summa Cum Laude with a GPA of 4.07</ul>
+                <ul>Dean's List: Spring 2019, Fall 2020, Winter 2020</ul>
             </div>
-            <!-- photo end-->
 
-            <div class="col-sm-10">
-                <div class="cv-title">
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <h1>Donna Hooshmand</h1>
-                        </div>
-                        <div class="col-sm-5 text-right dl-share">
-                            <!-- AddToAny BEGIN -->
-                            <a class="a2a_dd btn btn-default" href=""><span class="fa fa-share "></span> Share</a>
-                            <script type="text/javascript">
-                                var a2a_config = a2a_config || {};
-                                a2a_config.linkname = "Minimal CV by EvenFly";
-                                a2a_config.num_services = 6;
-                                a2a_config.prioritize = ["facebook", "twitter", "google_plus", "linkedin", "pinterest", "email"];
-                            </script>
-                            <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-                            <!-- AddToAny END -->
-
-                            <a class="btn btn-success" href=""><span class="fa fa-download"></span> Download</a>
-                        </div>
-                    </div>
-                    <h2>Double Major in Computer Science and Math</h2>
-                    <h2>University of Oregon</h2>
-                    <h2>email: DonnaHooshmand@yahoo.com</h2>
-                </div><!-- Title end-->
-
-                <!-- ===========================
-                SOCIAL & CONTACT
-                ============================ -->
-
-                    <div class="col-sm-4">
-                        <ul class="list-unstyled">
-                            <li><a href="https://www.linkedin.com/in/donna-hooshmand-781074196"></span>Linkedin</a>
-                            </li>
-                            <li><a href="https://github.com/DonnaHooshmand"></span>GitHub</a>
-                            </li>
-                        </ul>
-                    </div><!-- social 2nd col end-->
-
-                </div><!-- header social end-->
-            </div><!-- header right end-->
-        </div><!-- header end-->
-
-        <hr class="firsthr">
-
-        <!-- ===========================
-        BODY LEFT PART
-        ============================ -->
-        <div class="col-md-8 mainleft">
-            <div id="statement" class="row mobmid">
-                <div class="col-sm-1">
-                    <span class="secicon fa fa-user"></span>
-                </div><!--icon end-->
-
-                <div class="col-sm-11">
-                    <h3>Research Interests & Goals</h3>
-                    <p>My desire for a career in Artificial Intelligence and Computer Security has grown significantly over the years. AI has turned into a key technology in today's world. From the creation of self-driving cars to engineering “real” artificially intelligent and self-aware machines, I believe it is extremely important to look at the intersection where AI meets Computer Security. By exploring these topics, I’ve become very interested in AI+SEC, which is a newly emerging and exciting field. Despite its importance, not much research has been done in this field. Additionally, there are only a handful of professors and researchers that specialize in both AI and Security. I aim to pursue a PhD in AI and Security, which is a niche I hope to focus on and expand for the future.</p>
-                </div><!--info end-->
-            </div><!--personal statement end-->
-
-            <hr>
-
-            <div id="education" class="row mobmid">
-                <div class="col-sm-1">
-                    <span class="secicon fa fa-graduation-cap"></span>
-                </div><!--icon end-->
-
-                <div class="col-sm-11">
-                    <h3>Education</h3>
-
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h4>Bachelors Degree</h4>
-                            <p class="sub">University of Oregon, Eugene, Oregon
-                            </p>
-                            <p>Double major in Computer Information Systems and Mathematics.</p>
-                            <p>Currently holding a 4.04 GPA.</p>
-                            <p>Founder and President of the Persian Student Association 2019-2020 and 2020-2021 academic year.</p>
-                            <p>Founder and President of the Mirzakhani Society 2020-2021 academic year.</p>
-                        </div>
-
-                        <div class="year col-md-3">
-                            <p>September 2018 - June 2021</p>
-                        </div>
-                    </div><!--Education & Certification 1 end-->
-                    
-                    <hr>
-                    
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h4>Transfer</h4>
-                            <p class="sub">Portland Community College, Portland, Oregon</p>
-                            <p>Maintained a 4.0 GPA.</p>
-                            <p>Presidents list Fall 2017, Winter and Spring 2018. </p>
-                        </div>
-
-                        <div class="year col-md-3">
-                            <p>September 2017 - June 2018</p>
-                        </div>
-                    </div><!--Education & Certification 2 end-->
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h4>National Organization got developement of Exceptional Talents (NODET)</h4>
-                            <p class="sub">High school diploma, Kerman, Iran
-                            </p>
-                            <p>Admission to NODET schools is selective and based on a comprehensive nationwide entrance examination procedure. Every year thousands of students apply to enter the schools, from which less than 1% are chosen from the 99 middle schools and 98 high schools within the country. If a student is accepted (s)he will be re-evaluated throughout his/her studies, to ensure (s)he is still qualified to pursue his/her studies further at NODET. Each entrance exam includes two tests devised to measure intelligence and talent of the participants as well as their acquired knowledge.</p>
-                        </div>
-
-                        <div class="year col-md-3">
-                            <p>September 2014 - June 2017</p>
-                        </div>
-                    </div><!--Education & Certification 3 end-->
-                </div>
-            </div><!--Education & Certifications end-->
+        </section>
+        <section id="research">
+            <h2>Research Experience</h2>
+            <div class="white_box">
+                <h3>PhD Research Assistant, Northwestern University</h3>
+                <ul><b>Analysis-Augmented Generation (AAG):</b> A method for analyzing structured data generate facts in natural language that guide language generation in language models.</ul>
+                <ul><b>Satyrn:</b> A neurosymbolic platform that employs AAG to create Accurate, fluent, and coherent reports from large-scale databases.</ul>
+                <ul><b>Tytan:</b> A data ingestion tool that generates a lightweight knowledge representation of the data, describing the objects in the dataset to apply analytics and produce information.</ul>
+                <ul><b>Retinal Ischemic Perivascular Lesions (RIPLs) Detection in Optical Coherence Tomography (OCT) scans:</b> Using both classical Deep Learning methods to optimize the training set by using Machine Teaching and Curriculum Learning.</ul>
+                <ul><b>Geographic Atrophy (GA) detection in OCT scans:</b> Using the same methods mentioned above.</ul>
             
-            <hr>
-
-
-        </div><!--left end-->
-        */
-        <!-- ===========================
-        SIDEBAR
-        =========================== -->
-        <div class="col-md-4 mainright">
-            <div class="row">
-                <div class="col-sm-1 col-md-2 mobmid">
-                    <span class="secicon fa fa-magic"></span>
-                </div><!--icon end-->
-
-                <div class="col-sm-11 col-md-10">
-                    <h3 class="mobmid">Technical skills </h3>
-
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (success)</span>
-                        </div>
-                    </div><!--skill end-->
-
-
-                    <p>C Programming</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete</span>
-                        </div>
-                    </div><!--skill end-->
-
-                    <p>HTML</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            <span class="sr-only">80% Complete (warning)</span>
-                        </div>
-                    </div><!--skill end-->
-
-                    <p>C++</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                            <span class="sr-only">70% Complete (warning)</span>
-                        </div>
-                    </div><!--skill end-->
-
-                    <p>Mathematics</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
-                    </div><!--skill end-->
-                </div><!--info end-->
-            </div><!--tech skills end-->
-            
-            <hr>
-
-            <div class="row mobmid">
-                <div class="col-sm-1 col-md-2">
-                    <span class="secicon fa fa-trophy"></span>
-                </div><!--icon end-->
-
-                <div class="col-sm-11 col-md-10 ">
-                    <h3>Acheivements and Awards</h3>
-
-                    <div class="Acheivements">
-                        <h4>Oregon Quarterly Magazine</h4>
-<!--                         <p>GFeatured in Oregon Quarterly Magazine Fall 2020 issue <a href="https://issuu.com/uomarketingcommunications/docs/oq_autumn_2020/30"></span>Click here to view the article</a> </p> -->
-                    <p>GFeatured in Oregon Quarterly Magazine Fall 2020 issue </p>
-                    </div>
-                    <!--1st award end-->
-
-                    <div class="Philip Seeley">
-                        <h4>Philip Seeley Scholarship</h4>
-                        <p class="sub">2020</p>
-                        <p>Received the Philip Seeley Scholarship in Computer and Information Science in 2020.</p>
-                    </div><!--1st award end-->
-
-                    <div class="NSF funding">
-                        <h4>NSF funding</h4>
-                        <p>Received NSF-REU funding for Summer 2020 to do research on the longitudinal analysis of major video streaming services in the US</p>
-                    </div>
-
-                    <div class="Undergraduate symposium">
-                        <h4>Presented in University of Oregon's Undergraduate Symposium</h4>
-                        <p><a href="https://www.youtube.com/watch?v=0ZSTWsy9TyM"></span>Youtube Video </a></p>
-                    </div>
-
-                    <div class="Grand Prize">
-                        <h4>Iran’s Inventions Grand Prize</h4>
-                        <p>Nominated in “Iran’s Inventions Grand Prize.” Earning an appreciation certificate in the International conference center of Tehran Milad Tower. </p>
-                    </div>
-
-                    <div class="Mathematics">
-                        <h4>Great Mathematics Competition</h4>
-                        <p>Being selected and awarded in the twelfth “Great Mathematics Competition.”  </p>
-                    </div>
-
-                    <div class="Research">
-                        <h4>Ebne Sina Research Center and Laboratory</h4>
-                        <p>Being Selected as one of the top 3 students for doing research in “Ebne Sina Research Center and Laboratory” for 3 consecutive years.  </p>
-                    </div>
-
-                    <div class="Khwarizmi">
-                        <h4>Khwarizmi Young Award</h4>
-                        <p>Participated and being selected in Iran’s “Khwarizmi Young Award” festival for two consecutive years as one of the top 3 inventions in Kerman Province.</p>
-                    </div>
-
-                    <div class="NODET">
-                        <h4>Honorable Certificate</h4>
-                        <p>Earned “Honorable Appreciation Certificate” from NODET.</p>
-                    </div>
-
-                </div><!--awards end-->
-
+                <h3>Research Assistant, University of Oregon</h3>
+                <ul>Research at the Oregon Networking Research Group (ONRG) Lab at University of Oregon on “Longitudinal Analysis of Major Video-Streaming Services in the U.S.”</ul>
             </div>
             
-            <hr>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="white_box">
+            <h3>Papers</h3>
+                <ul>Marko Sterbentz, Cameron Barrie, Shubham Shahi, Abhratanu Dutta, <b>Donna Hooshmand</b>, Harper Pack, Kristian J. Hammond, 2024. Satyrn: A Platform for Analytics Augmented Generation. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, pages 6360-6385, Miami, Florida, USA. Association for Computational Linguistics.</ul>
+                <ul>Michael Drakopoulos, <b>Donna Hooshmand</b>, Laura A. Machlab, Paul J. Bryar, Kristian J. Hammond, Rukhsana G. Mirza, Machine Teaching Allows for Rapid Development of Automated Systems for Retinal Lesion Detection From Small Image Datasets., Ophthalmic Surgery, Lasers and Imaging Retina, 2024, 1-4</ul>
+                <ul>Marko Sterbentz, Cameron Barrie, <b>Donna Hooshmand</b>, Shubham Shahi, Abhratanu Dutta, Harper Pack, Andong Li Zhao, Andrew Paley, Alexander Einarsson, Kristian Hammond, Lightweight Knowledge Representations for Automating Data Analysis., arXiv preprint arXiv:2311.12848, 2023</ul>
+                <ul>[Pending] Michael Drakopoulos, <b>Donna Hooshmand</b>, Laura Machlab, Paul Bryar, Kristian Hammond, Rukhsana Mirza, Machine teaching for automated retinal lesion detection in small image sets.</ul>
 
-            
-                           
-            </div><!--tech skills end-->
-        </div><!--right end-->
-    </div><!--container end-->
+            <h3>Posters</h3>
+            <ul>Michael Drakopoulos, <b>Donna Hooshmand</b>, Laura Machlab, Kristian Hammond, Rukhsana Mirza, Automated identification of subretinal drusenoid deposits in dry age-related macular degeneration from a small imaging dataset, Northwestern University Feinberg School of Medicine 17th Annual Lewis Landsberg Research Day, 2023</ul>
+            <ul>Michael Drakopoulos, <b>Donna Hooshmand</b>, Laura Machlab, Paul Bryar, Kristian Hammond, Rukhsana Mirza, Automated identification of retinal ischemic perivascular lesions, a potential imaging biomarker of cardiovascular disease, American Medical Association Research Challenge, 2023</ul>
+            <ul>Michael Drakopoulos, <b>Donna Hooshmand</b>, Laura Machlab, Paul Bryar, Kristian Hammond, Rukhsana Mirza, Machine teaching enables rapid development of first automated system to identify retinal ischemic perivascular lesions, Retina Society Annual Meeting, 2023</ul>
+            </div>
+        </section>
 
-    <!--necessary scripts and plugins-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/evenfly.js"></script>
+        <section id="teaching">
+            <div class="white_box">
+            <h2>Teaching Experience</h2>
+
+            <h3>Teaching Assitant, Northwestern Univeresity</h3>
+            <ul>TA for COMP SCI 394 / CHEM ENG 395 / MECH ENG 395: Artificial Life - Winter 2023</ul>
+            <ul>TA for MSAI 431: Frameworks of AI - Winter 2024, Fall 2024</ul>
+            <ul>Designing the curriculum for COMP SCI 348: Intro to AI - Fall 2024 - Spring 2025</ul>
+
+            <h3>Research Mentor, Northwestern University</h3>
+            <ul>Took initiative to create research curricula and projects for mentees to support them in their academic and research journeys.</ul>
+            <ul>Collaborated with faculty members to facilitate interdisciplinary projects to promote applications of AI to real world problems.</ul>
+
+            <h3>Teaching Assistant, University of Oregon</h3>
+            <ul> TA for CIS 212: Computer Science III - Spring 2020</ul>
+            <ul>TA for Math 232: Elements of Discrete Mathematics II - Winter 2020, Winter 2021</ul>
+            <ul>TA for Math 231: Elements of Discrete Mathematics I - Fall 2019, Spring 2020, Fall 2020</ul>
+        </div>
+
+        </section>
+
+        <section id="award">
+            <div class="white_box">
+                <h2>Awards and Certificates</h2>
+                <ul>Peter and Adrienne Barris Outstanding Teaching Assistant Award (Northwestern University, Winter 2023)</ul>
+                <ul>Enhanced Funding Award (Northwestern University, Fall 2022-Winter2023)</ul>
+                <ul>Philip Seeley Scholarship in Computer Science and Information Technology (University of Oregon, Spring 2021)</ul>
+                <ul>NSF-REU funding for research in Machine Learning with the ONRG group (University of Oregon, 2020-2021)</ul>
+                <ul>Mentoring Up + Down, Northwestern University</ul>
+                <ul>Discussion of Teaching, CIRTLE, Northwestern University</ul>
+                <ul>Iran’s Inventions Grand Prize (Spring 2017)</ul>
+                <ul>Khwarizmi Young Award (Spring 2017)</ul>
+                <ul>Iran’s Great Mathematics Competition (Spring 2015)</ul>
+            </div>
+        </section>
+
+        <section id="community">
+            <div class="white_box">
+                <ul>Mentored Undergrade, Master’s, and PhD students at Northwestern University.</ul>
+                <ul>Board member of Computer Science PhD Advisory Counsel at Northwestern University.</ul>
+                <ul>Board member of the Graduate Women in Computing Group at Northwestern University.</ul>
+                <ul>Board member of the Artificial Intelligence Journal Club at Northwestern University.</ul>
+                <ul>Board member of Iranian Student Association at Northwestern University.</ul>
+                <ul>Founder and President of the Persian Student Association at University of Oregon.</ul>
+                <ul>Founder and President of Mirzakhani Society at University of Oregon.</ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>Email: <a href="mailto:donna.hooshmand@northwestern.edu">donna.hooshmand@northwestern.edu</a></ul>
+            <ul>LinkedIn: <a href="https://linkedin.com/in/donnahooshmand">linkedin.com/in/donnahooshmand</a></ul>
+            <ul>Github: <a href="https://github.com/donnahooshmand">github.com/donnahooshmand</a></ul>
+
+        </section>
+    </div>
+    <!-- <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer> -->
 </body>
-
 </html>
